@@ -1,0 +1,10 @@
+div {
+    display: flex;
+    flex-direction: ;
+}
+
+span {
+    position: absolute;
+    top: 5px;
+    color: blueviolet;
+}
