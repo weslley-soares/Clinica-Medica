@@ -1,0 +1,139 @@
+/* Corpo do site */
+main {
+    min-width: 360px;
+    max-width: 640px;
+    margin: auto;
+}
+
+/* Imagem Principal */
+#img {
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* Sessão Psiquiatra */
+.sessao1 {
+    background-color: rgb(99, 247, 99);
+    padding: 10px;
+    color: rgb(110, 108, 108);
+
+    h1 {
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    a {
+        color: rgb(110, 108, 108);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Sessão Neurologia */
+.sessao2 {
+    background-color: rgb(19, 238, 19);
+    padding: 10px;
+    color: rgb(77, 74, 74);
+
+    h1 {
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    a {
+        color: rgb(77, 74, 74);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Sessão Neurologia Pediátrica */
+.sessao3 {
+    background-color: rgb(9, 139, 9);
+    padding: 10px;
+    color: rgb(56, 55, 55);
+
+    h1 {
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    a {
+        color: rgb(56, 55, 55);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Agendar Consulta Online */
+.agenda {
+    background-color: blueviolet;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    a {
+        background-color: rgb(74, 7, 136);
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.informacoes {
+    h1 {
+        color: rgb(8, 70, 8);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    aside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 100px;
+
+        .material-icons {
+            color: rgb(8, 70, 8);
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: rgb(8, 70, 8);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p {
+            color: rgb(8, 70, 8);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        a {
+            color: blueviolet;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
