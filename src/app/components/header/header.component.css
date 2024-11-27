@@ -12,9 +12,11 @@ header {
 h1 {
     font-family: "Sour Gummy", sans-serif;
     color: blueviolet;
+    text-align: center;
 }
 
 p {
+  text-align: center;
     color: darkgray;
 }
 

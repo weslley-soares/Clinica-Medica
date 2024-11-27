@@ -1,0 +1,22 @@
+.conteiner {
+  position: absolute;
+  top: 5px;
+  margin: auto;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+
+  img {
+    width: 35px;
+    height: 35px;
+    right: 5px;
+  }
+}
+a:hover {
+  text-decoration: underline;
+}

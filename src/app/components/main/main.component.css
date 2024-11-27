@@ -1,8 +1,9 @@
 /* Corpo do site */
 main {
-    min-width: 360px;
-    max-width: 640px;
-    margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 360px;
+  max-width: 640px;
+  margin: auto;
 }
 
 /* Imagem Principal */
@@ -27,7 +28,7 @@ main {
         margin-bottom: 10px;
     }
     a {
-        color: rgb(110, 108, 108);
+        color: violet;
         font-weight: bold;
         text-decoration: none;
     }
@@ -49,7 +50,7 @@ main {
         margin-bottom: 10px;
     }
     a {
-        color: rgb(77, 74, 74);
+        color: violet;
         font-weight: bold;
         text-decoration: none;
     }
@@ -60,7 +61,7 @@ main {
 
 /* Sessão Neurologia Pediátrica */
 .sessao3 {
-    background-color: rgb(9, 139, 9);
+    background-color: rgb(12, 203, 12);
     padding: 10px;
     color: rgb(56, 55, 55);
 
@@ -71,7 +72,7 @@ main {
         margin-bottom: 10px;
     }
     a {
-        color: rgb(56, 55, 55);
+        color: violet;
         font-weight: bold;
         text-decoration: none;
     }

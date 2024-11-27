@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-carrossel',
@@ -8,20 +8,17 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   templateUrl: './carrossel.component.html',
   styleUrls: ['./carrossel.component.css']
 })
-export class CarrosselComponent implements OnInit, OnDestroy {
+export class CarrosselComponent {
   // Lista de imagens para o carrossel
   images: string[] = [
-    'pexels-cottonbro-4101143.jpg',
-    'pexels-mart-production-7089020.jpg',
-    'pexels-shkrabaanthony-7579174.jpg',
-    'pexels-shvetsa-4226264.jpg'
+    'carrosel/pexels-cottonbro-4101143.jpg',
+    'carrosel/pexels-mart-production-7089020.jpg',
+    'carrosel/pexels-shkrabaanthony-7579174.jpg',
+    'carrosel/pexels-shvetsa-4226264.jpg'
   ];
 
   // Índice do slide atual (inicia com o primeiro slide)
   currentIndex: number = 0;
-
-  // Variável para armazenar o ID do intervalo
-  private intervalId: any;
 
   // Função que calcula o estilo para mover o carrossel
   getTransform(): string {
@@ -30,6 +27,7 @@ export class CarrosselComponent implements OnInit, OnDestroy {
 
   // Função que avança para o próximo slide
   next() {
+    // Se não for o último slide, vai para o próximo. Caso contrário, volta para o primeiro slide.
     if (this.currentIndex < this.images.length - 1) {
       this.currentIndex++;
     } else {
@@ -39,26 +37,11 @@ export class CarrosselComponent implements OnInit, OnDestroy {
 
   // Função que volta para o slide anterior
   prev() {
+    // Se não for o primeiro slide, vai para o anterior. Caso contrário, vai para o último slide.
     if (this.currentIndex > 0) {
       this.currentIndex--;
     } else {
       this.currentIndex = this.images.length - 1;  // Vai para o último slide
     }
   }
-
-  // Iniciar o carrossel automático
-  ngOnInit() {
-    // Defina o intervalo para avançar os slides automaticamente a cada 3 segundos
-    this.intervalId = setInterval(() => {
-      this.next();
-    }, 3000); // 3000 milissegundos (3 segundos)
-  }
-
-  // Limpar o intervalo quando o componente for destruído
-  ngOnDestroy() {
-    if (this.intervalId) {
-      clearInterval(this.intervalId);
-    }
-  }
 }
-

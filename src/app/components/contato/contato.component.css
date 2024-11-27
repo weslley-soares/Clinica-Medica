@@ -1,0 +1,39 @@
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    color: green;
+    margin: 20px;
+  }
+  p {
+    margin: 20px;
+  }
+  #enviar {
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 20px
+  }
+}
+
+ul {
+  list-style-type: none;
+
+  li {
+    text-align: center;
+    margin: 20px;
+  }
+  .caixa {
+    padding: 10px;
+  }
+  #texto {
+    height: 80px;
+    width: 200px;
+    padding: 10px;
+  }
+}

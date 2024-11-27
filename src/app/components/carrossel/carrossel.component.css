@@ -1,8 +1,8 @@
 /* carrossel.component.css */
 .carousel-container {
   position: relative;
-  width: 100%;
-  max-width: 800px;
+  min-width: 360px;
+  max-width: 640px;
   margin: auto;
   overflow: hidden;
 }
