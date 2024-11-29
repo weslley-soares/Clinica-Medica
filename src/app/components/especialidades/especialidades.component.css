@@ -19,30 +19,33 @@ main {
   }
 
   section {
-    margin-bottom: 200px
+    margin-bottom: 200px;
+    text-align: center;
   }
 
   div.agendar {}
 
-    div {
-      background-color: blueviolet;
-      text-align: center;
-      width: 60%;
-      padding: 1px;
-      margin:  20px auto;
+  div {
+    background-color: blueviolet;
+    text-align: center;
+    width: 60%;
+    padding: 1px;
+    margin: 20px auto;
+
     a {
-        color: #fff;
-        text-decoration: none;
+      color: #fff;
+      text-decoration: none;
     }
   }
+
   p {
-      font-weight: emem;
+    font-weight: emem;
   }
 }
 
-  h2 {
-    color: green;
-  }
+h2 {
+  color: green;
+}
 
 .img {
   min-width: 360px;
@@ -52,4 +55,75 @@ main {
 
 img {
   width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 641px) and (max-width: 1024px) { /* Tablets */
+  main {
+    max-width: 960px;
+  }
+
+  section {
+    width: 80%;
+  }
+
+  .titulo {
+    padding: 15px;
+  }
+
+  div {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .img {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) { /* Desktops */
+  main {
+    max-width: 1200px;
+  }
+
+  .titulo {
+    padding: 20px;
+  }
+
+  div {
+    width: 40%;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .img {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1441px) { /* Smart TVs */
+  main {
+    max-width: 1600px;
+  }
+
+  .titulo {
+    padding: 30px;
+  }
+
+  div {
+    width: 30%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .img {
+    max-width: 1600px;
+  }
 }

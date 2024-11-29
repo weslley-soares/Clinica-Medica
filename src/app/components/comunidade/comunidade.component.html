@@ -1,1 +1,19 @@
-<p>comunidade works!</p>
+<div class="comunidade-container">
+  <h2>Comunidade</h2>
+
+  <div class="form-container">
+    <input #inputMensagem placeholder="Digite sua mensagem" />
+    <button (click)="adicionarMensagem(inputMensagem)">Adicionar</button>
+  </div>
+
+  <div *ngIf="mensagens.length > 0" class="mensagens-lista">
+    <div *ngFor="let mensagem of mensagens; let i = index" class="mensagem-item">
+      <p>{{ mensagem }}</p>
+      <button (click)="excluirMensagem(i)">Excluir</button>
+    </div>
+  </div>
+
+  <div *ngIf="mensagens.length === 0" class="mensagens-vazia">
+    <p>Nenhuma mensagem ainda.</p>
+  </div>
+</div>

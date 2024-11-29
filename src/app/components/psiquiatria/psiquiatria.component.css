@@ -19,22 +19,22 @@ main {
   }
 
   div.agendar {
-
     div {
       background-color: blueviolet;
       text-align: center;
       width: 60%;
       padding: 5px;
       margin: auto;
+    }
     a {
-        color: #fff;
-        text-decoration: none;
+      color: #fff;
+      text-decoration: none;
     }
   }
+
   p {
-      font-weight: emem;
+    font-weight: emem;
   }
-}
 
   h2 {
     color: green;
@@ -49,4 +49,81 @@ main {
 
 img {
   width: 100%;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para tablets (maior que 640px até 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  main {
+    max-width: 800px; /* Ajusta a largura do container para telas de tablet */
+  }
+
+  .titulo {
+    padding: 15px;
+  }
+
+  div.agendar {
+    div {
+      width: 50%; /* Aumenta a largura do botão de agendamento */
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Ajusta o tamanho do título h2 */
+  }
+
+  p {
+    font-size: 1rem; /* Ajusta o tamanho do parágrafo */
+  }
+}
+
+/* Para telas de desktop (maior que 1024px) */
+@media (min-width: 1025px) and (max-width: 1600px) {
+  main {
+    max-width: 1000px; /* Ajusta a largura do container para telas de desktop */
+  }
+
+  .titulo {
+    padding: 20px;
+  }
+
+  div.agendar {
+    div {
+      width: 40%; /* Ajusta a largura do botão de agendamento */
+    }
+  }
+
+  h2 {
+    font-size: 2rem; /* Ajusta o tamanho do título h2 */
+  }
+
+  p {
+    font-size: 1.2rem; /* Ajusta o tamanho do parágrafo */
+  }
+}
+
+/* Para telas de TV Smart (maior que 1600px) */
+@media (min-width: 1601px) {
+  main {
+    max-width: 1200px; /* Ajusta a largura do container para telas grandes como TV */
+  }
+
+  .titulo {
+    padding: 25px;
+  }
+
+  div.agendar {
+    div {
+      width: 30%; /* Ajusta a largura do botão de agendamento */
+    }
+  }
+
+  h2 {
+    font-size: 2.5rem; /* Ajusta o tamanho do título h2 */
+  }
+
+  p {
+    font-size: 1.4rem; /* Ajusta o tamanho do parágrafo */
+  }
 }

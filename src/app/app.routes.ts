@@ -13,6 +13,13 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { PerguntaComponent } from './components/pergunta/pergunta.component';
 import { LoginComponent } from './components/login/login.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { PosAgendamentoComponent } from './components/pos-agendamento/pos-agendamento.component';
+import { LoginMedicoComponent } from './components/login-medico/login-medico.component';
+import { PerfilMedicoComponent } from './components/perfil-medico/perfil-medico.component';
+import { CadastroMedicoComponent } from './components/cadastro-medico/cadastro-medico.component';
+import { PosCadastroComponent } from './components/pos-cadastro/pos-cadastro.component';
+import { PosCadastroMedicoComponent } from './components/pos-cadastro-medico/pos-cadastro-medico.component';
+import { ComunidadeComponent } from './components/comunidade/comunidade.component';
 
 export const routes: Routes = [
   {path: '', component: MainComponent},
@@ -26,5 +33,13 @@ export const routes: Routes = [
   {path: 'cadastro', component: CadastroComponent},
   {path: 'pergunta', component: PerguntaComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'perfil', component: PerfilComponent}
+  {path: 'perfil', component: PerfilComponent},
+  {path: 'cadastro', component: CadastroComponent},
+  {path: 'posAg', component: PosAgendamentoComponent},
+  {path: 'login-medico', component: LoginMedicoComponent},
+  {path: 'perfil-medico', component: PerfilMedicoComponent},
+  {path: 'cadastro-medico', component: CadastroMedicoComponent},
+  {path: 'pos-cadastro', component: PosCadastroComponent},
+  {path: 'pos-cadastro-medico', component: PosCadastroMedicoComponent},
+  {path: 'comunidade', component: ComunidadeComponent}
 ];

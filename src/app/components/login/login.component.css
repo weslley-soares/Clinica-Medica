@@ -1,0 +1,129 @@
+main {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.login {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="email"], input[type="password"] {
+  width: 90%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#cadastrar {
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+
+/* Tablet e Mobile */
+@media (max-width: 1023px) {
+  main {
+    background-color: #C9E4CA; /* Cor de fundo para medicina */
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .login {
+    width: 400px;
+    padding: 30px;
+  }
+  input[type="email"], input[type="password"] {
+    height: 50px;
+    padding: 15px;
+  }
+  button {
+    padding: 15px 30px;
+  }
+}
+
+/* Desktop e TV Smart */
+@media (min-width: 1024px) {
+  main {
+    background-image: url(/fundo/pexels-alex-green-5699463.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 2s;
+  }
+
+  .login {
+    width: 600px;
+    padding: 40px;
+    margin: 80px auto;
+  }
+  input[type="email"], input[type="password"] {
+    height: 60px;
+    padding: 20px;
+  }
+  button {
+    padding: 20px 40px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Troca de imagem de fundo */
+@media (min-width: 1024px) {
+  main {
+    animation: troca-imagem 20s infinite;
+  }
+}
+
+@keyframes troca-imagem {
+  0% {
+    background-image: url(/fundo/pexels-amel-uzunovic-440739273-15410078.jpg);
+  }
+  33% {
+    background-image: url(/fundo/pexels-kos-chiropractic-integrative-health-716706805-19034027.jpg);
+  }
+  66% {
+    background-image: url(/fundo/pexels-kseniachernaya-6340550.jpg);
+  }
+  100% {
+    background-image: url(/fundo/pexels-tima-miroshnichenko-6011602.jpg);
+  }
+}

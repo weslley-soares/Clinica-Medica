@@ -1,0 +1,25 @@
+<nav class="menu" [class.menu-mobile]="isMobile">
+  <ul>
+    <li *ngFor="let item of menuItems; let i = index">
+      <a (mouseover)="mudarImagem(item.imagem)" (mouseout)="voltarImagemPrincipal()"
+        (click)="selecionarImagem(item.imagem)" [class.ativo]="item.imagem === imagemSelecionada">
+        {{ item.titulo }}
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<img class="imagem-principal" [src]="/links/icone-endereco.png">
+
+<!-- Menu visual -->
+<div class="menu-visual">
+  <a href="/" (mouseover)="mudarImagem(menuItems[0].imagem)" (click)="selecionarImagem(menuItems[0].imagem)">Home</a>
+  <a href="/especialidade" (mouseover)="mudarImagem(menuItems[1].imagem)"
+    (click)="selecionarImagem(menuItems[1].imagem)">Especialidades</a>
+  <a href="/comunidade" (mouseover)="mudarImagem(menuItems[2].imagem)"
+    (click)="selecionarImagem(menuItems[2].imagem)">Comunidade</a>
+  <a href="/sobre-nos" (mouseover)="mudarImagem(menuItems[3].imagem)"
+    (click)="selecionarImagem(menuItems[3].imagem)">Sobre Nós</a>
+  <a href="/contato" (mouseover)="mudarImagem(menuItems[4].imagem)"
+    (click)="selecionarImagem(menuItems[4].imagem)">Contato</a>
+</div>

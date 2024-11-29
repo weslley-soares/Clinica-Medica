@@ -1,0 +1,112 @@
+.comunidade-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    input {
+      width: 80%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 15%;
+      padding: 10px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .mensagens-lista {
+    margin-top: 20px;
+
+    .mensagem-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      border-radius: 4px;
+
+      button {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .mensagens-vazia {
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) { /* Mobile e tablets */
+    .form-container {
+      flex-direction: column;
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+
+    .mensagem-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 1024px) { /* Tablets */
+    .form-container {
+      input {
+        width: 80%;
+      }
+
+      button {
+        width: 18%;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) { /* Desktops e TV */
+    .form-container {
+      input {
+        width: 70%;
+      }
+
+      button {
+        width: 25%;
+      }
+    }
+
+    .mensagem-item {
+      font-size: 1.1rem;
+    }
+  }
+}

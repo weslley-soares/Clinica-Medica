@@ -1,3 +1,4 @@
+/* Estilo padrão para mobile */
 footer {
   background-color: rgb(36, 196, 36);
   color: #fff;
@@ -6,10 +7,10 @@ footer {
   max-width: 640px;
   margin: auto;
   padding: 5px;
+}
 
-  p {
-    text-align: center;
-  }
+footer p {
+  text-align: center;
 }
 
 .img {
@@ -31,4 +32,61 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Estilo para tablets */
+@media (min-width: 768px) {
+  footer {
+    min-width: 720px;
+    max-width: 1024px;
+    padding: 15px;
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+    margin: 15px;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Estilo para desktops */
+@media (min-width: 1024px) {
+  footer {
+    min-width: 960px;
+    max-width: 1280px;
+    padding: 20px;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+  }
+
+  a {
+    font-size: 1.4rem;
+  }
+}
+
+/* Estilo para TVs smart (largura maior que 1600px) */
+@media (min-width: 1600px) {
+  footer {
+    min-width: 1200px;
+    max-width: 1600px;
+    padding: 30px;
+  }
+
+  img {
+    height: 60px;
+    width: 60px;
+    margin: 25px;
+  }
+
+  a {
+    font-size: 1.6rem;
+  }
 }

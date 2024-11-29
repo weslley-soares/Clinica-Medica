@@ -9,32 +9,35 @@ main {
 /* Imagem Principal */
 #img {
     width: 100%;
+}
 
-    img {
-        width: 100%;
-    }
+#img img {
+    width: 100%;
 }
 
 /* Sessão Psiquiatra */
 .sessao1 {
-    background-color: rgb(99, 247, 99);
+    background-color: rgb(76, 249, 76);
     padding: 10px;
     color: rgb(110, 108, 108);
+}
 
-    h1 {
-        margin-bottom: 15px;
-    }
-    p {
-        margin-bottom: 10px;
-    }
-    a {
-        color: violet;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
+.sessao1 h1 {
+    margin-bottom: 15px;
+}
+
+.sessao1 p {
+    margin-bottom: 10px;
+}
+
+.sessao1 a {
+    color: rgb(228, 52, 228);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sessao1 a:hover {
+    text-decoration: underline;
 }
 
 /* Sessão Neurologia */
@@ -42,21 +45,24 @@ main {
     background-color: rgb(19, 238, 19);
     padding: 10px;
     color: rgb(77, 74, 74);
+}
 
-    h1 {
-        margin-bottom: 15px;
-    }
-    p {
-        margin-bottom: 10px;
-    }
-    a {
-        color: violet;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
+.sessao2 h1 {
+    margin-bottom: 15px;
+}
+
+.sessao2 p {
+    margin-bottom: 10px;
+}
+
+.sessao2 a {
+    color: rgb(228, 52, 228);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sessao2 a:hover {
+    text-decoration: underline;
 }
 
 /* Sessão Neurologia Pediátrica */
@@ -64,21 +70,24 @@ main {
     background-color: rgb(12, 203, 12);
     padding: 10px;
     color: rgb(56, 55, 55);
+}
 
-    h1 {
-        margin-bottom: 15px;
-    }
-    p {
-        margin-bottom: 10px;
-    }
-    a {
-        color: violet;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
+.sessao3 h1 {
+    margin-bottom: 15px;
+}
+
+.sessao3 p {
+    margin-bottom: 10px;
+}
+
+.sessao3 a {
+    color: rgb(228, 52, 228);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sessao3 a:hover {
+    text-decoration: underline;
 }
 
 /* Agendar Consulta Online */
@@ -87,54 +96,118 @@ main {
     color: #fff;
     margin-bottom: 20px;
     padding: 20px;
+}
 
-    a {
-        background-color: rgb(74, 7, 136);
-        color: #fff;
-        font-weight: bold;
-        text-decoration: none;
-        padding: 10px;
+.agenda a {
+    background-color: rgb(74, 7, 136);
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.agenda a:hover {
+    text-decoration: underline;
+}
+
+/* Informações */
+.informacoes h1 {
+    color: rgb(8, 70, 8);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.informacoes aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.informacoes .material-icons {
+    color: rgb(8, 70, 8);
+    margin-bottom: 10px;
+}
+
+.informacoes h2 {
+    color: rgb(8, 70, 8);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.informacoes p {
+    color: rgb(8, 70, 8);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.informacoes a {
+    color: blueviolet;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.informacoes a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade para tablets, desktops e TVs */
+
+/* Para telas maiores que 640px (tablets em modo paisagem e desktops pequenos) */
+@media (min-width: 641px) {
+    main {
+        max-width: 960px;  /* Aumenta a largura máxima do conteúdo */
     }
-    a:hover {
-        text-decoration: underline;
+
+    .sessao1, .sessao2, .sessao3 {
+        padding: 20px;  /* Aumenta o padding nas sessões */
+    }
+
+    .agenda {
+        padding: 30px;  /* Aumenta o padding da seção de agendamento */
+    }
+
+    .informacoes aside {
+        flex-direction: row;  /* Muda a direção para linha */
+        justify-content: space-between;  /* Distribui os itens de forma mais espaçada */
+        margin-bottom: 60px;  /* Reduz o espaçamento inferior */
+    }
+
+    .informacoes .material-icons {
+        font-size: 2rem;  /* Aumenta o tamanho dos ícones */
+    }
+
+    .informacoes h2, .informacoes p {
+        font-size: 1.2rem;  /* Aumenta o tamanho do texto */
     }
 }
 
-.informacoes {
-    h1 {
-        color: rgb(8, 70, 8);
-        text-align: center;
-        margin-bottom: 40px;
+/* Para telas maiores que 1024px (desktops maiores e TVs) */
+@media (min-width: 1025px) {
+    main {
+        max-width: 1200px;  /* Aumenta a largura máxima do conteúdo */
     }
-    aside {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-bottom: 100px;
 
-        .material-icons {
-            color: rgb(8, 70, 8);
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: rgb(8, 70, 8);
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        p {
-            color: rgb(8, 70, 8);
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        a {
-            color: blueviolet;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+    .sessao1, .sessao2, .sessao3 {
+        padding: 30px;  /* Aumenta ainda mais o padding das sessões */
+    }
+
+    .agenda {
+        padding: 40px;  /* Aumenta o padding da seção de agendamento */
+    }
+
+    .informacoes aside {
+        justify-content: space-evenly;  /* Distribui os itens de forma mais igualitária */
+        margin-bottom: 80px;  /* Aumenta o espaçamento inferior */
+    }
+
+    .informacoes .material-icons {
+        font-size: 2.5rem;  /* Aumenta o tamanho dos ícones */
+    }
+
+    .informacoes h2, .informacoes p {
+        font-size: 1.5rem;  /* Aumenta ainda mais o tamanho do texto */
     }
 }

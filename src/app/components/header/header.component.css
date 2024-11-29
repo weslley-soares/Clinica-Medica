@@ -9,6 +9,12 @@ header {
     margin: 20px auto;
 }
 
+img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
 h1 {
     font-family: "Sour Gummy", sans-serif;
     color: blueviolet;
@@ -23,4 +29,34 @@ p {
 span {
     font-family: Arial, Helvetica, sans-serif;
     color: green;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  header {
+    width: 1024px;
+    display: flex;
+    text-align: left;
+
+    .cabecalho {
+      display: flex;
+      flex-direction: column;
+      text-align: lef;
+    }
+  }
+}
+
+/* smart tv */
+@media (min-width: 1600px) {
+  header {
+    width: 1024px;
+    display: flex;
+    text-align: left;
+
+    .cabecalho {
+      display: flex;
+      flex-direction: column;
+      text-align: lef;
+    }
+  }
 }

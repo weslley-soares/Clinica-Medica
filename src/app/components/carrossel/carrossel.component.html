@@ -1,4 +1,5 @@
-<!-- carrossel.component.html -->
+<main>
+  <!-- carrossel.component.html -->
 <div class="carousel-container">
   <div class="carousel-slide" [style.transform]="getTransform()">
     <div class="carousel-item" *ngFor="let image of images; let i = index">
@@ -9,4 +10,5 @@
   <button class="prev" (click)="prev()">‹</button>
   <button class="next" (click)="next()">›</button>
 </div>
+</main>
 

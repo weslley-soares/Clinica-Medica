@@ -1,0 +1,47 @@
+<main>
+  <div class="perfil">
+    <div class="foto">
+      <img [src]="fotoUsuario" alt="Foto do usuário" id="foto_usuario">
+      <label for="nova_foto">Alterar foto</label>
+      <input type="file" id="nova_foto" accept="image/*" (change)="atualizarFoto($event)">
+    </div>
+    <div class="informacoes">
+      <h2 id="nome_usuario">{{ nomeUsuario }}</h2>
+      <p id="email_usuario">{{ emailUsuario }}</p>
+      <p id="bio_usuario">{{ bioUsuario }}</p>
+      <button id="btn_editar" (click)="abrirModalEditar()">Editar informações</button>
+      <button id="btn_sair" (click)="sair()"><a href="/login">Sair</a></button>
+    </div>
+  </div>
+
+  <!-- Modal Editar -->
+  <div class="modal" id="modal_editar" *ngIf="modalEditarVisivel" (click)="fecharModal($event, 'modalEditar')">
+    <div class="modal-content">
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" [value]="nomeUsuario"><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" [value]="emailUsuario"><br><br>
+        <label for="bio">Biografia:</label>
+        <textarea id="bio" name="bio">{{ bioUsuario }}</textarea><br><br>
+        <button id="btn_salvar" type="button" (click)="salvarInformacoes($event)">Salvar alterações</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Login -->
+  <div class="modal" id="modal_login" *ngIf="modalLoginVisivel" (click)="fecharModal($event, 'modalLogin')">
+    <div class="modal-content">
+      <form>
+        <label for="email_login">E-mail:</label>
+        <input type="email" id="email_login" name="email_login"><br><br>
+        <label for="senha_login">Senha:</label>
+        <input type="password" id="senha_login" name="senha_login"><br><br>
+        <button id="btn_login" (click)="login(email_login.value, senha_login.value)">Login</button>
+        <button id="btn_cadastrar" (click)="irParaCadastro()">Cadastrar</button>
+      </form>
+      <p id="msg_erro">{{ msgErro }}</p>
+    </div>
+  </div>
+
+</main>

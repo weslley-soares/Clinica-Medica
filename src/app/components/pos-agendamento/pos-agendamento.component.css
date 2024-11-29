@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.container {
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+}
+
+.voltar {
+  font-size: 18px;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.voltar:hover {
+  color: #23527c;
+}
+
+/* Responsividade */
+
+/* Mobile (padrão) */
+
+/* Tablet (min-width: 768px) */
+@media (min-width: 768px) {
+  .container {
+    width: 60%;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    width: 40%;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 28px;
+  }
+}
+
+/* TV Smart (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .container {
+    width: 30%;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  p {
+    font-size: 36px;
+  }
+}

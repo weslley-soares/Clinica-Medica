@@ -64,3 +64,9 @@ span {
     color: #fff;
   }
 }
+
+@media (min-width: 1064px) {
+  #icone {
+    display: block;
+  }
+}

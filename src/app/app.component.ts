@@ -15,7 +15,6 @@ import { RouterModule } from '@angular/router';
 import { CadastroComponent } from "./components/cadastro/cadastro.component";
 import { PerguntaComponent } from "./components/pergunta/pergunta.component";
 import { IconeLogComponent } from "./components/icone-log/icone-log.component";
-import { LoginComponent } from "./components/login/login.component";
 import { CommonModule } from '@angular/common';
 import { PerfilComponent } from "./components/perfil/perfil.component";
 
@@ -40,7 +39,6 @@ import { PerfilComponent } from "./components/perfil/perfil.component";
     CadastroComponent,
     PerguntaComponent,
     IconeLogComponent,
-    LoginComponent,
     PerfilComponent
 ],
   templateUrl: './app.component.html',
